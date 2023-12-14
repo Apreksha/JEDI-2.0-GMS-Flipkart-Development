@@ -1,0 +1,74 @@
+package com.flipkart.business;
+
+import com.flipkart.bean.Customer;
+
+public class CustomerService {
+	//Customer customer = new Customer();
+	
+	Customer customers[]=new Customer[3];
+	
+	public String createCustomer(){
+		
+		
+		//record 1
+		customers[0]=new Customer();
+		customers[0].setCustomerId(101);
+		customers[0].setCustomerName("Harman");
+		customers[0].setCustomerAddress("delhi");
+		
+		// create the second customer 
+		
+	    customers[1]=new Customer();
+        customers[1].setCustomerId(102);
+		customers[1].setCustomerName("shalani");
+		customers[1].setCustomerAddress("mumbai");
+				
+		// create the first customer 
+				
+		customers[2]=new Customer();
+		customers[2].setCustomerId(103);
+		customers[2].setCustomerName("parth");
+		customers[2].setCustomerAddress("delhi");
+		
+		
+		return "Customer is created";
+	}
+	
+	public boolean deleteCustomer(int id) {
+		
+		for(int cust = 0; cust < 3; cust++) {
+			if(customers[cust].getCustomerId() == id) {
+				customers[cust] = null;
+			}
+		}
+		
+		System.out.println("Customer is deleted by id: " + id);
+		return true;
+	}
+	
+	public boolean updateCustomer(int id) {
+		
+		for(Customer cust: customers) {
+			if(cust.getCustomerId() == id) {
+				cust.setCustomerName("Flipkart");
+				cust.setCustomerAddress("ETV Campus");
+			}
+		}
+		
+		System.out.println("Customer is updated by id: " + id);
+		return true;
+	}
+	
+	public void listCustomer() {
+		
+		for(Customer cust : customers) {
+			 
+			 
+			 System.out.println("details of customer-->" + cust.getCustomerId() + "-"
+			 + cust.getCustomerName() + "-" + cust.getCustomerAddress() );
+		 }
+		
+		
+		System.out.println("Customers are listed");
+	}
+}

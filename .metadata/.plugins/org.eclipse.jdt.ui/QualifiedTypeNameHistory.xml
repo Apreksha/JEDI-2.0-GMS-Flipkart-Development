@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.flipkart.business.CustomerService"/>
+    <fullyQualifiedTypeName name="com.flipkart.business.GymCentreService"/>
+    <fullyQualifiedTypeName name="com.flipkart.business.GymOwnerService"/>
+    <fullyQualifiedTypeName name="com.flipkart.business.AdminService"/>
+</qualifiedTypeNameHistroy>

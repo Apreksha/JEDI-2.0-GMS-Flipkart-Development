@@ -1,0 +1,42 @@
+package com.flipkart.business;
+
+import com.flipkart.bean.Customer;
+
+public class CustomerService {
+	Customer customer = new Customer();
+	
+	
+	public String createCustomer(){
+		
+		
+		//record 1
+		customer.setCustomerId(101);
+		customer.setCustomerName("Apreksha");
+		customer.setCustomerAddress("Bangalore");
+		
+		
+		
+		
+		return "Customer is created";
+	}
+	
+	public boolean deleteCustomer(int id) {
+		System.out.println("Customer is deleted by id" + id);
+		return true;
+	}
+	
+	public boolean updateCustomer(int id) {
+		System.out.println("Customer is updated by id" + id);
+		return true;
+	}
+	
+	public void listCustomer() {
+		
+		System.out.println(customer.getCustomerId());
+		System.out.println(customer.getCustomerName());
+		System.out.println(customer.getCustomerAddress());
+		
+		
+		System.out.println("Customers are listed");
+	}
+}
