@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package com.flipkart.io;
+
+/**
+ * 
+ */
+public class FlipfitInput {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

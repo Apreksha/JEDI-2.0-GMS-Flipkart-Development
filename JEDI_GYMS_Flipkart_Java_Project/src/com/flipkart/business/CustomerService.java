@@ -1,7 +1,13 @@
 package com.flipkart.business;
 
+import com.flipkart.dao.CustomerDAO;
+
 public class CustomerService {
 	public String getCustomerDetails(){
+		
+		CustomerDAO customer = new CustomerDAO();
+		System.out.println(customer.createCustomer());
+		
 		return "get Customer Details";
 	}
 	
