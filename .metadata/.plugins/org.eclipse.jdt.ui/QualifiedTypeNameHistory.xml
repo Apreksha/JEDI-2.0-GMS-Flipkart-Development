@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="com.flipkart.business.GymOwnerService"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.flipkart.dao.CustomerDAO"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.flipkart.business.CustomerService"/>
     <fullyQualifiedTypeName name="com.flipkart.business.UserService"/>
     <fullyQualifiedTypeName name="com.flipkart.business.AdminService"/>
@@ -15,4 +14,18 @@
     <fullyQualifiedTypeName name="com.flipkart.utils.DBUtils"/>
     <fullyQualifiedTypeName name="com.flipkart.business.BankService"/>
     <fullyQualifiedTypeName name="com.flipkart.customException.InsufficientFundException"/>
+    <fullyQualifiedTypeName name="com.flipkart.exceptions.GymCentreNotFoundException"/>
+    <fullyQualifiedTypeName name="com.flipkart.exceptions.GymOwnerNotFoundException"/>
+    <fullyQualifiedTypeName name="com.flipkart.exceptions.IncorrectDataException"/>
+    <fullyQualifiedTypeName name="com.flipkart.exceptions.SlotNotFoundException"/>
+    <fullyQualifiedTypeName name="com.flipkart.exceptions.UserNotFoundException"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.stream.Collectors"/>
 </qualifiedTypeNameHistroy>
