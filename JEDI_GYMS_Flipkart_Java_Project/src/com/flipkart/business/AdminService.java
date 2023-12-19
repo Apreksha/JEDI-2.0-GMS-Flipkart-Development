@@ -1,6 +1,26 @@
 package com.flipkart.business;
 
+import com.flipkart.bean.Admin;
+import com.flipkart.bean.Customer;
+import com.flipkart.dao.AdminDAO;
+import com.flipkart.dao.CustomerDAO;
+
 public class AdminService {
+	AdminDAO adminDatabase = new AdminDAO();
+	Admin admin = new Admin();
+	
+	public void createAdmin(int id, String name, String emailAddress, int phone, String password) {
+		
+		admin.setAdminEmailAddress(emailAddress);
+		admin.setAdminName(name);
+		admin.setAdminId(id);
+		admin.setAdminPhone(phone);
+		admin.setPassword(password);
+		adminDatabase.add(admin);
+		
+		System.out.println("admin details added");
+	}
+	
 	public String viewPendingGymRequests(){
 		return "View pending gym requests";
 	}

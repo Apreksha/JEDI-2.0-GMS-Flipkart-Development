@@ -6,7 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value="1"/>
 		<list key="findhistory">
+			<item value="user.Primary"/>
+			<item value="1"/>
 			<item value="viewPendingGymRequests"/>
 		</list>
 		<list key="replacehistory">

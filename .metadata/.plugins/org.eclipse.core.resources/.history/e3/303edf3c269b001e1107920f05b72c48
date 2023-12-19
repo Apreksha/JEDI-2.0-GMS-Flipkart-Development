@@ -1,0 +1,57 @@
+/**
+ * 
+ */
+package com.flipkart.client;
+
+import java.util.Scanner;
+
+import com.flipkart.bean.Customer;
+import com.flipkart.business.CustomerService;
+
+/**
+ * 
+ */
+public class CustomerClient {
+
+	/**
+	 * @param args
+	 */
+	
+	public static void customerMenu() {	
+		
+		CustomerService customerService = new CustomerService();
+		Customer customer = new Customer();
+		Scanner in = new Scanner(System.in); 
+		int option;
+		System.out.println(customerService.getCustomerDetails());
+		
+		System.out.println("1. Search Gym");
+		System.out.println("2. Book a slot");
+		System.out.println("3. View Booked slots");
+		System.out.println("4. Cancel Booking");
+		System.out.println("5. Make Payment");
+		System.out.println("7. Edit Profile");
+		System.out.println("8. Exit");
+		
+		option = in.nextInt();
+		
+		if(option == 7) {
+			System.out.println("1. Edit name");
+			System.out.println("2. Edit email address");
+			System.out.println("3. Edit phone");
+			
+			int subOption = in.nextInt();
+			
+			if(subOption == 1) {
+				String name = in.next();
+				customer.setCustomerName(name);
+				System.out.println("Name changed successfully");
+			}
+			
+		}
+		else if(option == 8) {
+			GymApplicationClient gymApplication = new GymApplicationClient();
+			gymApplication.main(null);
+		}
+	}
+}

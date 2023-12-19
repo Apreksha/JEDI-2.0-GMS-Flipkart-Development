@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.flipkart.business.CustomerService"/>
     <fullyQualifiedTypeName name="com.flipkart.business.GymCentreService"/>
     <fullyQualifiedTypeName name="com.flipkart.business.GymOwnerService"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.flipkart.dao.CustomerDAO"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.flipkart.business.CustomerService"/>
+    <fullyQualifiedTypeName name="com.flipkart.business.UserService"/>
     <fullyQualifiedTypeName name="com.flipkart.business.AdminService"/>
+    <fullyQualifiedTypeName name="com.flipkart.dao.AdminDAO"/>
+    <fullyQualifiedTypeName name="com.flipkart.bean.Customer"/>
+    <fullyQualifiedTypeName name="com.flipkart.bean.Admin"/>
+    <fullyQualifiedTypeName name="com.flipkart.business.CustomerInterface"/>
+    <fullyQualifiedTypeName name="com.flipkart.utils.DBUtils"/>
+    <fullyQualifiedTypeName name="com.flipkart.business.BankService"/>
+    <fullyQualifiedTypeName name="com.flipkart.customException.InsufficientFundException"/>
 </qualifiedTypeNameHistroy>

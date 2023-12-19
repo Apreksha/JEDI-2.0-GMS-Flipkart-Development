@@ -1,0 +1,63 @@
+package com.flipkart.business;
+
+import java.util.List;
+
+import com.flipkart.bean.Customer;
+import com.flipkart.dao.CustomerDAO;
+
+public class CustomerService {
+	CustomerDAO customerDatabase = new CustomerDAO();
+	Customer customer = new Customer();
+	
+	public void createCustomer(int id, String name, String emailAddress, int phone, String password) {
+		
+		
+		customer.setCustomerEmailAddress(emailAddress);
+		customer.setCustomerName(name);
+		customer.setCustomerId(id);
+		customer.setCustomerPhone(phone);
+		customer.setPassword(password);
+		customerDatabase.add(customer);
+		
+		System.out.println("customer details added");
+	}
+	
+	public String getCustomerDetails(){	
+		CustomerDAO customer = new CustomerDAO();
+		return "get Customer Details";
+	}
+	
+	public boolean viewAllGymCenters(int id) {
+		System.out.println("view All Gym Centers");
+		return true;
+	}
+	
+	public boolean bookSlot(int id) {
+		System.out.println("book slot");
+		return true;
+	}
+	
+	public void isAlreadyBooked() {
+		System.out.println("is Already Booked");
+	}
+	
+	public void cancelSlot() {
+		System.out.println("cancel Slot");
+	}
+	
+	public void viewAllBookings() {
+		System.out.println("viewAllBookings");
+	}
+	
+	/*
+	public Customer authenticate(String username, String password) {
+		List<Customer> customers = customerDatabase.getCustomers();
+		
+		for(int custIndex = 0; custIndex < customers.size(); custIndex++) {
+			if(customers.get(custIndex) != null && customers.get(custIndex).getName().equals(name) && customers.get(custIndex).getPassword().equals(password))
+				return customers.get(custIndex);
+		}
+		return null;
+	}
+	*/
+}

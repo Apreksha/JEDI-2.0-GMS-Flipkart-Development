@@ -8,27 +8,8 @@ import com.flipkart.bean.Customer;
 public class CustomerDAO {
 	List<Customer> customers = new ArrayList<Customer>();
 	
-	public String createCustomer(){
-		
-		Customer cust1 = new Customer();
-		cust1.setCustomerId(101);
-		cust1.setCustomerName("Harman");
-		cust1.setCustomerAddress("delhi");
-		customers.add(cust1);
-		
-		Customer cust2 = new Customer();
-		cust2.setCustomerId(102);
-		cust2.setCustomerName("shalani");
-		cust2.setCustomerAddress("mumbai");
-		customers.add(cust2);
-				
-		Customer cust3 = new Customer();
-		cust3.setCustomerId(103);
-		cust3.setCustomerName("parth");
-		cust3.setCustomerAddress("delhi");
-		customers.add(cust3);
-		
-		return "Created";
-		
+	public void add(Customer customer) {
+		customers.add(customer);
+		System.out.println("Customer data successfully added");
 	}
 }

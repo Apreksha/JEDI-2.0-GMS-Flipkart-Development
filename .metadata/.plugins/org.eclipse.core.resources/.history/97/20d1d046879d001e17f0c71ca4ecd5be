@@ -1,0 +1,62 @@
+package com.flipkart.DAO;
+
+import com.flipkart.bean.GymCentre;
+import com.flipkart.bean.GymOwner;
+import com.flipkart.bean.Slot;
+
+import java.util.List;
+
+public interface GymOwnerDAO {
+    GymOwner getGymOwnerDetails(String gymOwnerId);
+    List<Slot> viewAllSlots();
+    List<GymCentre> viewAllGymCenters(String gymOwnerEmail);
+
+    /**
+	 * Method to check gym approval
+	 * @param gymId
+	 */
+    int findCapacity(int gymId);
+    
+
+    /**
+	 * Method to check gym approval
+	 * @param gymId
+	 */
+    boolean checkIfAlreadyBooked(int gymId);
+    
+
+    /**
+	 * Method to check gym approval
+	 * @param gymId
+	 */
+    void addSlots(int gymId, String time, String date);
+    
+
+    /**
+	 * Method to check gym approval
+	 * @param gymId
+	 */
+    void createSlot(Slot slot);
+    
+
+    /**
+	 * Method to check gym approval
+	 * @param gymId
+	 */
+    void addGym(GymCentre gymDetails);
+    
+
+    /**
+	 * Method to check gym approval
+	 * @param gymId
+	 */
+    boolean isApproved(String email);
+    
+
+    /**
+	 * Method to check gym approval
+	 * @param gymId
+	 */
+    boolean checkGymApproval(int gymId);
+
+}

@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.flipkart.bean.Customer;
 
-public class CustomerService {
+public class CustomerService implements CustomerInterface {
 	//Customer customer = new Customer();
 	
 	List<Customer> customers = new ArrayList<Customer>();

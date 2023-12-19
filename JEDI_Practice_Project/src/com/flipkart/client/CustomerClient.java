@@ -3,6 +3,7 @@
  */
 package com.flipkart.client;
 
+import com.flipkart.business.CustomerInterface;
 import com.flipkart.business.CustomerService;
 
 /**
@@ -15,7 +16,9 @@ public class CustomerClient {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		CustomerService service = new CustomerService();
+		//CustomerService service = new CustomerService();
+		CustomerInterface service = new CustomerService();
+		
 		System.out.println(service.createCustomer());
 		System.out.println(service.updateCustomer(102));
 		System.out.println(service.deleteCustomer(101));

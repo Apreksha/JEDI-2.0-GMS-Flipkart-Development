@@ -1,7 +1,11 @@
 package com.flipkart.business;
 
+import com.flipkart.bean.Customer;
+
 public class UserService {
-	public String registerCustomer(){
+	
+	public String registerCustomer(Customer customerDetails){
+		
 		return "register customer";
 	}
 	
