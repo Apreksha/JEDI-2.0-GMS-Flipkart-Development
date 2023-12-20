@@ -1,4 +1,4 @@
-.
+**
 ├── JEDI 2.0-GMS-UML-Artifact
 │   ├── Activity Diagram
 │   │   ├── Activity Diagram_GymOwner.png
@@ -10,3 +10,4 @@
 │       ├── Admin use case diagram.png
 │       ├── Gym Owner use case diagram.png
 │       └── User Use case Diagram.png
+**
